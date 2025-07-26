@@ -1,4 +1,4 @@
-.section {
+.our-team {
   text-align: center;
 }
 .meet {
@@ -52,14 +52,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: fill 250ms ease-in-out;
-}
-
-.team-socmedia-link:focus {
-  fill: #868584;
-}
-.team-socmedia-link:hover {
-  fill: #868584;
 }
 
 /* Styles for Tablet devices */

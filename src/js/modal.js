@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
       price: document.querySelector('[data-modal-price]'),
       input: document.querySelectorAll('.modal-form__input'),
       checkoutBasic: document.querySelector('[data-checkout-basic]'),
-      checkoutStandart: document.querySelector('[data-checkout-standart]'),
+      checkoutStandard: document.querySelector('[data-checkout-standard]'),
       checkoutPro: document.querySelector('[data-checkout-pro]'),
     };
 
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
       refs.price.textContent = '$10';
     });
 
-    refs.checkoutStandart?.addEventListener('click', () => {
+    refs.checkoutStandard?.addEventListener('click', () => {
       refs.modal.classList.remove('is-hidden');
       refs.text.textContent = '8 Sessions Package';
       refs.price.textContent = '$65';

@@ -21,7 +21,7 @@
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1336px) {
   .container {
-    max-width: 1440px;
-    padding: 0 64px;
+    max-width: 1336px;
+    padding: 0 12px;
   }
 }

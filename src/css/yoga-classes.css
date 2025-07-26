@@ -34,6 +34,14 @@
    display: flex;
    flex-direction: column;
    align-items: center;
+   transition: transform 0.4s ease, box-shadow 0.4s ease;
+   cursor: pointer;
+}
+
+.programs-item:hover {
+   transform: translateY(-8px);
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+   cursor: pointer;
 }
 
 .programs-photo{
@@ -41,6 +49,11 @@
     border-radius: 16px;
     overflow: hidden;
     margin-bottom: 24px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.programs-item:hover .programs-img {
+  transform: scale(1.08);
 }
 
 .programs-subtitle{
@@ -144,7 +157,7 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1336px) {
+@media screen and (min-width: 1336px){
     .programs-title {
         font-size: 52px;
     }
