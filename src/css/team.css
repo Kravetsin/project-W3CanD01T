@@ -41,6 +41,13 @@
   width: 343px;
   height: 221px;
 }
+@media only screen and (max-width: 767px) {
+  .team-card:nth-child(3) .team-photo,
+  .team-card:nth-child(3) img {
+    width: 346px;
+  }
+}
+
 .team-name {
   font-weight: 600;
   font-size: 18px;
@@ -104,6 +111,10 @@
   .team-photo,
   .team-card img {
     width: 421.33px;
+  }
+  .team-card--first-half .team-photo,
+  .team-card--first-half img {
+    width: 423px;
   }
   .team-card--second-half .team-photo,
   .team-card--second-half img {
