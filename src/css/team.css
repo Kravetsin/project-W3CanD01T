@@ -38,6 +38,7 @@
 }
 .team-photo,
 .team-card img {
+  width: 343px;
   height: 221px;
 }
 .team-name {
@@ -66,6 +67,7 @@
 @media only screen and (min-width: 768px) {
   .team-photo,
   .team-card img {
+    width: 340px;
     height: 395px;
   }
   .team-title {
@@ -99,6 +101,10 @@
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1336px) {
+  .team-photo,
+  .team-card img {
+    width: 421.33px;
+  }
   .team-card--second-half .team-photo,
   .team-card--second-half img {
     height: 410.6px;
