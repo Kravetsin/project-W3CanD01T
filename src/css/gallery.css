@@ -33,8 +33,8 @@
   overflow: hidden;
   width: calc((100% - 24px) / 2);
   border-radius: 16px;
-  transition: transform 250ms ease-in-out,
-    box-shadow 250ms ease-in-out, background-color 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out,
+    background-color 250ms ease-in-out;
 }
 @media only screen and (min-width: 768px) {
   .gallery-wrapper {
@@ -62,9 +62,12 @@
 }
 
 /* !ANIMATIONS */
-.gallery-item:hover{
+.gallery-item:hover {
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.25);
   background-color: #dfebeb;
   transform: scale(1.1);
 }
 
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
