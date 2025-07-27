@@ -17,7 +17,7 @@
       href="/project-W3CanD01T/assets/herobaner_mobile-min-w-IcgFbc.jpg"
     />
     <script type="module" crossorigin src="/project-W3CanD01T/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-W3CanD01T/assets/index-2rMQSIeq.css">
+    <link rel="stylesheet" crossorigin href="/project-W3CanD01T/assets/index-Dcui17yL.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -100,7 +100,23 @@
     <main>
       <!-- !Loads the specified .html file -->
       <section class="hero-section" id="hero">
-  <div class="hero-img"></div>
+  <picture class="hero-picture">
+    <source
+      media="(min-width: 1336px)"
+      srcset="/project-W3CanD01T/assets/herobaner_desktop@2x-min-D1pPQ15T.jpg 2x, /project-W3CanD01T/assets/herobaner_desktop-min-D1-DW7AS.jpg 1x"
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="/project-W3CanD01T/assets/herobaner_tablet@2x-min-CVRajdih.jpg 2x, /project-W3CanD01T/assets/herobaner_tablet-min-C7w7ehNI.jpg 1x"
+    />
+    <img
+      class="hero-img"
+      fetchpriority="high"
+      srcset="/project-W3CanD01T/assets/herobaner_mobile@2x-min-B3xGY3-a.jpg 2x, /project-W3CanD01T/assets/herobaner_mobile-min-w-IcgFbc.jpg 1x"
+      src="/project-W3CanD01T/assets/herobaner_mobile-min-w-IcgFbc.jpg"
+      alt="Yoga bloom"
+    />
+  </picture>
 
   <div class="container hero-container">
     <h1 class="hero-title">Transform Your Life with Our Yoga Clases</h1>
