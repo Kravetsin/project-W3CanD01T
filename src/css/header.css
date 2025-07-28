@@ -3,6 +3,7 @@
   top: 0;
   background-color: #f2fafa;
   z-index: 999;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.25);
 }
 
 .header__div {
@@ -56,6 +57,13 @@
   align-items: center;
   background-color: transparent;
   border: 1px solid transparent;
+  transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
+}
+
+.header__menu-btn.visible:hover,
+.header__menu-btn.visible:focus {
+  background-color: rgba(13, 11, 10, 0.025);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
 }
 
 .header__menu-btn {
@@ -72,6 +80,13 @@
   align-items: center;
   background-color: transparent;
   border: 1px solid transparent;
+  transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
+}
+
+.header__close-btn.visible:hover,
+.header__close-btn.visible:focus {
+  background-color: rgba(13, 11, 10, 0.025);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
 }
 
 .header-btn__join-now {
@@ -80,8 +95,9 @@
 
 .header__modal.is-hidden {
   top: -100%;
-  opacity: 0;
-  transition: top 450ms ease-in-out, opacity 1000ms ease-in-out;
+  opacity: 1;
+  overflow: hidden;
+  transition: top 450ms ease-in-out;
 }
 
 .header__modal {
@@ -122,10 +138,12 @@
   width: 100%;
   border-radius: 100px;
   transition: background-color 250ms ease-in-out, transform 250ms ease-in-out,
-    padding 200ms ease-in-out;
+    padding 200ms ease-in-out, box-shadow 250ms ease-in-out;
 }
 
-.header-modal__link:hover {
+.header-modal__link:hover,
+.header-modal__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
   background-color: #c2d9fc;
   transform: translateX(10px);
   padding: 0 15px;

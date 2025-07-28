@@ -33,8 +33,13 @@
           type="tel"
           id="user-phone"
           placeholder="Enter your phone number"
+          pattern="^\+?[0-9\s\-()]{7,20}$"
+          inputmode="tel"
+          autocomplete="tel"
+          oninput="this.value = this.value.replace(/[^0-9+\-()\s]/g, '')"
           required
-      /></label>
+        /><span class="error-message">Please enter a valid email</span></label
+      >
       <button class="modal-form__button button-anim btn--blue" type="submit">
         Go to checkout
       </button>
