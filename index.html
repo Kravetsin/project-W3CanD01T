@@ -29,7 +29,7 @@
       href="/project-W3CanD01T/assets/herobaner_mobile-min-CKwN6K3y.webp"
     />
     <script type="module" crossorigin src="/project-W3CanD01T/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-W3CanD01T/assets/index-Cmf-_Je8.css">
+    <link rel="stylesheet" crossorigin href="/project-W3CanD01T/assets/index-4gHjcLuq.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -1244,8 +1244,13 @@
           type="tel"
           id="user-phone"
           placeholder="Enter your phone number"
+          pattern="^\+?[0-9\s\-()]{7,20}$"
+          inputmode="tel"
+          autocomplete="tel"
+          oninput="this.value = this.value.replace(/[^0-9+\-()\s]/g, '')"
           required
-      /></label>
+        /><span class="error-message">Please enter a valid email</span></label
+      >
       <button class="modal-form__button button-anim btn--blue" type="submit">
         Go to checkout
       </button>
