@@ -21,6 +21,7 @@ ul {
 a {
   color: currentColor;
   text-decoration: none;
+  cursor: url('/cursor.png') 0 0, auto;
 }
 
 button {
